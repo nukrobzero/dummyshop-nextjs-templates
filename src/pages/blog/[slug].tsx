@@ -6,8 +6,8 @@ type Props = {
 
 export default function BlogSingle({ postData }: Props) {
   return (
-    <div>
-      <h1 className="text-2xl">{postData.title}</h1>
+    <div className="min-h-screen max-w-4xl mx-auto p-8">
+      <h1 className="text-2xl font-bold mb-2">{postData.title}</h1>
       <p>{postData.body}</p>
     </div>
   );
